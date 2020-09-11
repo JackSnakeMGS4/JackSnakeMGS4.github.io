@@ -14,15 +14,18 @@
 }
 
 body{
+	margin: 0px;
 	background: #0E0004;
 	font-family: 'Quantico', sans-serif;
 }
 
 header{
+	margin: 0px;
 	background: #6B0F1A;
 }
 
 main{
+	margin: 0px;
 	background: #31081F;
 }
 
@@ -32,7 +35,7 @@ main{
 
 .flex-container{
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .nav-bar-left{
@@ -40,19 +43,24 @@ main{
 	flex-grow: 5;
 }
 
-#logo{
-	flex-grow: .15;
+.logo{
+	/* flex-grow: .15; */
 	align-self: center;
-	height: 40px;
-	width: 40px;
+	height: 80px;
+	width: 80px;
+	background: url("images/faceshot.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	background-position: center;
 }
 
-#logo img{
+/* .logo img{
 	margin: 0;
 	max-width: 100%;
 	max-height: 100%;
-	border-radius: 10px;
-}
+	border-radius: 50%;
+} */
 
 #myName{
 	flex-grow: 3;
@@ -82,6 +90,21 @@ main{
 	color: #E1D368;
 }
 
+.portfolio-1{
+	max-width: 100%;
+}
+
+.highlights-container{
+	display: flex;
+	/* background: #6B0F1A; */
+	justify-content: space-evenly;
+}
+
+.highlights-left,.highlights-right{
+	display: flex;
+	flex-flow: column wrap;
+}
+
 .carousel-container{
 	max-width: 100%;
 	margin: auto;
@@ -89,7 +112,7 @@ main{
 	/* overflow: hidden; */
 }
 
-.carousel-container h2{
+div h2{
 	text-align: center;
 	margin: 10px 0;
 	padding: 5px;
@@ -114,7 +137,7 @@ main{
 }
 
 .cards::-webkit-scrollbar-thumb{
-	background: #FA198B;
+	background: #B91372;
 	border-radius: 10px;
 }
 
@@ -126,7 +149,7 @@ main{
 	scroll-snap-align: start;
 	flex-shrink: 0;
 	max-width: 100%;
-	max-height: 80rem;
+	max-height: 80vh;
 	transform-origin: center center;
 	transform: scale(1);
 	transition: transform .5s;
@@ -165,4 +188,37 @@ main{
 
 .card-image ~ div{
 	grid-area: summary;
+}
+
+footer{
+	margin: 0px;
+	background: #6B0F1A;
+}
+
+.footer-container{
+	margin: 0 15%;
+	display: grid;
+	grid-template-areas: 
+	"left mid right"
+	"left mid right"
+	"left mid right";
+	grid-template-columns: 1.5fr 1fr .5fr;
+}
+
+#about{
+	grid-area: left;
+}
+
+#about div:nth-of-type(2){
+	text-align: center;
+}
+
+#hobbies{
+	grid-area: mid;
+}
+
+#contact div{
+	grid-area: right;
+	display: flex;
+	/* flex-flow: column; */
 }
