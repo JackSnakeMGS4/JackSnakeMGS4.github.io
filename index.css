@@ -45,7 +45,7 @@ main{
 
 .logo{
 	/* flex-grow: .15; */
-	align-self: center;
+	margin: auto;
 	height: 80px;
 	width: 80px;
 	background: url("images/faceshot.jpg");
@@ -79,6 +79,10 @@ main{
 	justify-content: space-around;
 }
 
+#myLinks a{
+	color: black;
+}
+
 #myLinks i:hover{
 	cursor: pointer;
 	color: #E1D368;
@@ -103,6 +107,22 @@ main{
 .highlights-left,.highlights-right{
 	display: flex;
 	flex-flow: column wrap;
+}
+
+.fact{
+	justify-content: center;
+	text-align: center;
+	font-size: 18px;
+}
+
+.image{
+	justify-content: center;
+	align-self: center;
+	margin: 1rem;
+	transition: transform .7s;
+}
+.image:hover{
+	transform: rotate(360deg);
 }
 
 .carousel-container{
@@ -193,6 +213,7 @@ div h2{
 footer{
 	margin: 0px;
 	background: #6B0F1A;
+	color: #E1D368;
 }
 
 .footer-container{
@@ -209,6 +230,10 @@ footer{
 	grid-area: left;
 }
 
+#about h3{
+	text-align: center;
+}
+
 #about div:nth-of-type(2){
 	text-align: center;
 }
@@ -217,8 +242,33 @@ footer{
 	grid-area: mid;
 }
 
+#hobbies h3{
+	text-align: center;
+}
+
+.hobby-list ul{
+	display: flex;
+	flex-flow: column wrap;
+	list-style: none;
+}
+
+.hobby-list ul{
+	justify-content: center;
+	align-content: center;
+}
+
+.hobby-list ul li:nth-child(even){
+	margin-left: 1rem;
+}
+.hobby-list ul li:nth-child(odd){
+	margin-right: 2rem;
+}
+
 #contact div{
 	grid-area: right;
 	display: flex;
-	/* flex-flow: column; */
+}
+
+#contact div:nth-of-type(2){
+	color: black;
 }
