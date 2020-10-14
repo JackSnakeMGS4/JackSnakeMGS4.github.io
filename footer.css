@@ -1,0 +1,74 @@
+footer{
+	margin: 0px;
+	background: #6B0F1A;
+	color: #E1D368;
+}
+
+.footer-container{
+	margin: 0 15%;
+	display: grid;
+	grid-template-areas: 
+	"left mid right"
+	"left mid right"
+	"left mid right";
+	grid-template-columns: 1.5fr 1fr .5fr;
+}
+
+.logo{
+	/* flex-grow: .15; */
+	margin: auto;
+	height: 80px;
+	width: 80px;
+	background: url("images/faceshot.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	background-position: center;
+}
+
+#about{
+	grid-area: left;
+}
+
+#about h3{
+	text-align: center;
+}
+
+#about div:nth-of-type(2){
+	text-align: center;
+}
+
+#hobbies{
+	grid-area: mid;
+}
+
+#hobbies h3{
+	text-align: center;
+}
+
+.hobby-list ul{
+	display: flex;
+	flex-flow: column wrap;
+	list-style: none;
+}
+
+.hobby-list ul{
+	justify-content: center;
+	align-content: center;
+}
+
+.hobby-list ul li:nth-child(even){
+	margin-left: 1rem;
+}
+.hobby-list ul li:nth-child(odd){
+	margin-right: 2rem;
+}
+
+#contact div{
+	grid-area: right;
+	display: flex;
+}
+
+#contact div:nth-of-type(2){
+	color: #0E0004;
+}
