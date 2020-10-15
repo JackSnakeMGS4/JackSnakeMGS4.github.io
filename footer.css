@@ -23,7 +23,7 @@ footer{
 	background-size: contain;
 	background-repeat: no-repeat;
 	border-radius: 50%;
-	background-position: center;
+    background-position: center;
 }
 
 #about{
@@ -46,21 +46,21 @@ footer{
 	text-align: center;
 }
 
-.hobby-list ul{
+.hobby-list{
 	display: flex;
 	flex-flow: column wrap;
-	list-style: none;
+    list-style: none;
 }
 
-.hobby-list ul{
-	justify-content: center;
-	align-content: center;
+.hobby-list{
+    justify-content: center;
+    align-content: center;
 }
 
-.hobby-list ul li:nth-child(even){
+.hobby-list li:nth-child(even){
 	margin-left: 1rem;
 }
-.hobby-list ul li:nth-child(odd){
+.hobby-list li:nth-child(odd){
 	margin-right: 2rem;
 }
 
